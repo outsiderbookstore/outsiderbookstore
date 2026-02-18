@@ -9,9 +9,9 @@
     header { border-bottom: 1px solid #ddd; padding-bottom: 20px; }
     nav ul { list-style: none; padding: 0; }
     nav li { margin-bottom: 10px; }
+    nav a { color: #0066cc; text-decoration: none; }
     .lang-zh { color: #666; font-size: 0.9em; margin-left: 5px; }
     section { margin-top: 30px; }
-    .contact-links a { display: inline-block; margin-right: 15px; text-decoration: none; color: #0066cc; }
   </style>
 </head>
 <body>
@@ -24,13 +24,33 @@
   <ul>
     <li>トップ <span class="lang-zh">/ 首頁</span></li>
 
-    <li>局外人書店とは <span class="lang-zh">/ 關於局外人書店</span>
+    <!-- ★ About（日本語＋中国語の両方リンク化） -->
+    <li>
+      <a href="about.html">局外人書店とは</a>
+      <span class="lang-zh">/ <a href="about.html">關於局外人書店</a></span>
       <ul>
-        <li>理念 <span class="lang-zh">/ 理念</span></li>
-        <li>Twitter / Twitter</li>
-        <li>Instagram / Instagram</li>
-        <li>交通 <span class="lang-zh">/ 交通資訊</span></li>
-        <li>お問い合わせ <span class="lang-zh">/ 聯絡我們</span></li>
+        <li>
+          <a href="about.html#about-philosophy">理念</a>
+          <span class="lang-zh">/ <a href="about.html#about-philosophy">理念</a></span>
+        </li>
+
+        <li>
+          <a href="about.html#about-twitter">Twitter</a>
+        </li>
+
+        <li>
+          <a href="about.html#about-instagram">Instagram</a>
+        </li>
+
+        <li>
+          <a href="about.html#about-access">交通</a>
+          <span class="lang-zh">/ <a href="about.html#about-access">交通資訊</a></span>
+        </li>
+
+        <li>
+          <a href="about.html#about-contact">お問い合わせ</a>
+          <span class="lang-zh">/ <a href="about.html#about-contact">聯絡我們</a></span>
+        </li>
       </ul>
     </li>
 
