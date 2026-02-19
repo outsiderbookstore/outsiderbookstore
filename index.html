@@ -3,17 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>局外人書店 / 關於局外人書店</title>
+  <title>局外人書店 / 局外人書店</title>
+
   <style>
-    body { font-family: sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 20px; background: #fdfdfd; }
-    header { border-bottom: 1px solid #ddd; padding-bottom: 20px; }
-    nav ul { list-style: none; padding: 0; }
-    nav li { margin-bottom: 10px; }
-    nav a { color: #0066cc; text-decoration: none; }
-    .lang-zh { color: #666; font-size: 0.9em; margin-left: 5px; }
-    section { margin-top: 30px; }
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      background: #fdfdfd;
+    }
+
+    header {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .lang-zh {
+      color: #666;
+      font-size: 0.9em;
+      margin-left: 5px;
+    }
+
+    /* ★ サブ項目のインデント（階層を見やすくする） */
+    nav ul ul li {
+      margin-left: 12px;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -24,39 +59,49 @@
   <ul>
     <li>トップ <span class="lang-zh">/ 首頁</span></li>
 
-    <!-- ★ About（日本語＋中国語の両方リンク化） -->
+    <!-- ★ 局外人書店とは -->
     <li>
       <a href="about.html">局外人書店とは</a>
       <span class="lang-zh">/ <a href="about.html">關於局外人書店</a></span>
+
       <ul>
+        <!-- 理念 -->
         <li>
-          <a href="about.html#about-philosophy">理念</a>
-          <span class="lang-zh">/ <a href="about.html#about-philosophy">理念</a></span>
+          <a href="about.html#about">理念</a>
+          <span class="lang-zh">/ <a href="about.html#about">理念</a></span>
         </li>
 
+        <!-- SNS -->
         <li>
-          <a href="about.html#about-twitter">Twitter</a>
+          <a href="about.html#about-sns">SNS</a>
+          <span class="lang-zh">/ <a href="about.html#about-sns">社群</a></span>
         </li>
+        <li><a href="https://x.com/outsider_book">　Twitter</a></li>
+        <li><a href="https://www.instagram.com/outsiderbookstore/">　Instagram</a></li>
+        <li><a href="https://www.youtube.com/">　YouTube</a></li>
 
-        <li>
-          <a href="about.html#about-instagram">Instagram</a>
-        </li>
-
+        <!-- 交通 -->
         <li>
           <a href="about.html#about-access">交通</a>
           <span class="lang-zh">/ <a href="about.html#about-access">交通資訊</a></span>
         </li>
 
+        <!-- お問い合わせ -->
         <li>
           <a href="about.html#about-contact">お問い合わせ</a>
           <span class="lang-zh">/ <a href="about.html#about-contact">聯絡我們</a></span>
         </li>
+        <li>　Mail</li>
+        <li>　WeChat</li>
       </ul>
     </li>
 
+    <!-- ニュース -->
     <li>ニュース・特集 <span class="lang-zh">/ 新聞・專題</span></li>
 
-    <li>営業内容 <span class="lang-zh">/ 服務內容</span>
+    <!-- 営業内容 -->
+    <li>
+      営業内容 <span class="lang-zh">/ 服務內容</span>
       <ul>
         <li>書店 <span class="lang-zh">/ 書店</span></li>
         <li>公共図書館 <span class="lang-zh">/ 公共圖書館</span></li>
@@ -66,14 +111,34 @@
       </ul>
     </li>
 
-    <li>イベント <span class="lang-zh">/ 活動</span>
+    <!-- イベント -->
+    <li>
+      イベント <span class="lang-zh">/ 活動</span>
       <ul>
-        <li>定期イベント <span class="lang-zh">/ 定期活動</span>
+        <li>
+          定期イベント <span class="lang-zh">/ 定期活動</span>
           <ul>
             <li>卓球 <span class="lang-zh">/ 乒乓球</span></li>
             <li>日中交流会 <span class="lang-zh">/ 中日交流會</span></li>
           </ul>
         </li>
+
+        <li>
+          不定期イベント <span class="lang-zh">/ 不定期活動</span>
+          <ul>
+            <li>局外談 <span class="lang-zh">/ 局外談</span></li>
+            <li>展示 <span class="lang-zh">/ 展覽</span></li>
+            <li>親子イベント <span class="lang-zh">/ 親子活動</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+</body>
+</html>
 
         <li>不定期イベント <span class="lang-zh">/ 不定期活動</span>
           <ul>
