@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>卓球 / 乒乓球</title>
+
   <style>
     body {
       font-family: sans-serif;
@@ -13,16 +14,19 @@
       padding: 20px;
       background: #fdfdfd;
     }
+
     header {
       border-bottom: 1px solid #ddd;
       padding-bottom: 20px;
       margin-bottom: 20px;
     }
+
     .lang-zh {
       color: #666;
       font-size: 0.9em;
       margin-left: 5px;
     }
+
     img {
       max-width: 100%;
       height: auto;
@@ -35,13 +39,15 @@
 <body>
 
 <header>
-  <h1>卓球 <span class="lang-zh">/ 乒乓球</span></h1>
+  <h1>
+    卓球
+    <span class="lang-zh">/ 乒乓球</span>
+  </h1>
 </header>
 
 <section>
-  <img src="1771479551538_023943.jpg" alt="卓球">
+  <img src="pingpongimage.jpg" alt="卓球の写真">
 </section>
 
 </body>
 </html>
-
