@@ -62,19 +62,19 @@
     <!-- ★ 局外人書店とは -->
     <li>
       <a href="about.html">局外人書店とは</a>
-      <span class="lang-zh">/ <a href="about.html">關於局外人書店</a></span>
+      <span class="lang-zh">/ <a href="about">關於局外人書店</a></span>
 
       <ul>
         <!-- 理念 -->
         <li>
           <a href="about.html#about">理念</a>
-          <span class="lang-zh">/ <a href="about.html#about">理念</a></span>
+          <span class="lang-zh">/ <a href="about#about">理念</a></span>
         </li>
 
         <!-- SNS -->
         <li>
           <a href="about.html#about-sns">SNS</a>
-          <span class="lang-zh">/ <a href="about.html#about-sns">社群</a></span>
+          <span class="lang-zh">/ <a href="about#about-sns">社群</a></span>
         </li>
         <li><a href="https://x.com/outsider_book">　Twitter</a></li>
         <li><a href="https://www.instagram.com/outsiderbookstore/">　Instagram</a></li>
@@ -82,14 +82,14 @@
 
         <!-- 交通 -->
         <li>
-          <a href="about.html#about-access">交通</a>
-          <span class="lang-zh">/ <a href="about.html#about-access">交通資訊</a></span>
+          <a href="about#about-access">交通</a>
+          <span class="lang-zh">/ <a href="about#about-access">交通資訊</a></span>
         </li>
 
         <!-- お問い合わせ -->
         <li>
-          <a href="about.html#about-contact">お問い合わせ</a>
-          <span class="lang-zh">/ <a href="about.html#about-contact">聯絡我們</a></span>
+          <a href="about#about-contact">お問い合わせ</a>
+          <span class="lang-zh">/ <a href="about#about-contact">聯絡我們</a></span>
         </li>
         <li>　Mail</li>
         <li>　WeChat</li>
@@ -118,8 +118,8 @@
         <li>
           定期イベント <span class="lang-zh">/ 定期活動</span>
           <ul>
-            <li><a href="pingpong.html">卓球</a>
-　　　　　　　　   <span class="lang-zh">/ <a href="pingpong.html">乒乓球</a></span></li>
+            <li><a href="pingpong">卓球</a>
+　　　　　　　　   <span class="lang-zh">/ <a href="pingpong">乒乓球</a></span></li>
             <li>日中交流会 <span class="lang-zh">/ 中日交流會</span></li>
           </ul>
         </li>
