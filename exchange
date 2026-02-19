@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>日中交流会 / 中日交流會</title>
+
   <style>
     body {
       font-family: sans-serif;
@@ -13,16 +14,19 @@
       padding: 20px;
       background: #fdfdfd;
     }
+
     header {
       border-bottom: 1px solid #ddd;
       padding-bottom: 20px;
       margin-bottom: 20px;
     }
+
     .lang-zh {
       color: #666;
       font-size: 0.9em;
       margin-left: 5px;
     }
+
     img {
       max-width: 100%;
       height: auto;
@@ -35,7 +39,10 @@
 <body>
 
 <header>
-  <h1>日中交流会 <span class="lang-zh">/ 中日交流會</span></h1>
+  <h1>
+    日中交流会
+    <span class="lang-zh">/ 中日交流會</span>
+  </h1>
 </header>
 
 <section>
@@ -44,4 +51,3 @@
 
 </body>
 </html>
-
