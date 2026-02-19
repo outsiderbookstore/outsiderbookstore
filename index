@@ -61,7 +61,7 @@
 
     <!-- ★ 局外人書店とは -->
     <li>
-      <a href="about.html">局外人書店とは</a>
+      <a href="about">局外人書店とは</a>
       <span class="lang-zh">/ <a href="about">關於局外人書店</a></span>
 
       <ul>
@@ -73,7 +73,7 @@
 
         <!-- SNS -->
         <li>
-          <a href="about.html#about-sns">SNS</a>
+          <a href="about#about-sns">SNS</a>
           <span class="lang-zh">/ <a href="about#about-sns">社群</a></span>
         </li>
         <li><a href="https://x.com/outsider_book">　Twitter</a></li>
