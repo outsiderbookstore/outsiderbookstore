@@ -15,15 +15,20 @@
       background: #fdfdfd;
     }
 
-    /* ★ メニューとロゴを横並びにするコンテナ */
-    .layout {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 40px;
+    header {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
 
-    /* メニュー部分 */
+    /* ★ メニューとロゴを横並びにするコンテナ */
+    .main-layout {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 40px; /* メニューとロゴの距離 */
+    }
+
     nav ul {
       list-style: none;
       padding: 0;
@@ -45,7 +50,6 @@
       margin-left: 5px;
     }
 
-    /* 階層 */
     nav ul ul li {
       margin-left: 16px;
     }
@@ -54,14 +58,14 @@
       margin-left: 32px;
     }
 
-    /* ★ ロゴ画像 */
+    /* ★ ロゴ画像（縦書き） */
     .logo {
-      height: 300px; /* 好きな高さに調整してOK */
+      height: 320px; /* 好きに調整してOK */
     }
 
-    /* スマホ対応：縦並びにする */
+    /* スマホでは縦並びに */
     @media (max-width: 768px) {
-      .layout {
+      .main-layout {
         flex-direction: column;
         align-items: center;
       }
@@ -79,7 +83,7 @@
 </header>
 
 <!-- ★ メニューとロゴを横並びにする -->
-<div class="layout">
+<div class="main-layout">
 
   <!-- メニュー -->
   <nav>
@@ -170,204 +174,6 @@
   <img src="logo.png" alt="局外人書店ロゴ" class="logo">
 
 </div>
-
-</body>
-</html>
-          <li>
-            <a href="about.html#about-access">交通</a>
-            <span class="lang-zh">/ <a href="about.html#about-access">交通資訊</a></span>
-          </li>
-
-          <li>
-            <a href="about.html#about-contact">お問い合わせ</a>
-            <span class="lang-zh">/ <a href="about.html#about-contact">聯絡我們</a></span>
-            <ul>
-              <li>Mail</li>
-              <li>WeChat</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-
-      <li>ニュース・特集 <span class="lang-zh">/ 新聞・專題</span></li>
-
-      <li>
-        営業内容 <span class="lang-zh">/ 服務內容</span>
-        <ul>
-          <li>書店 <span class="lang-zh">/ 書店</span></li>
-          <li>公共図書館 <span class="lang-zh">/ 公共圖書館</span></li>
-          <li>会員制度 <span class="lang-zh">/ 會員制度</span></li>
-          <li>日本語教室 <span class="lang-zh">/ 高葉日語課</span></li>
-          <li>出版 <span class="lang-zh">/ 出版</span></li>
-        </ul>
-      </li>
-
-      <li>
-        イベント <span class="lang-zh">/ 活動</span>
-        <ul>
-          <li>
-            定期イベント <span class="lang-zh">/ 定期活動</span>
-            <ul>
-              <li>
-                <a href="pingpong.html">卓球</a>
-                <span class="lang-zh">/ <a href="pingpong.html">乒乓球</a></span>
-              </li>
-              <li>
-                <a href="exchange.html">日中交流会</a>
-                <span class="lang-zh">/ <a href="exchange.html">中日交流會</a></span>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            不定期イベント <span class="lang-zh">/ 不定期活動</span>
-            <ul>
-              <li>局外縁 <span class="lang-zh">/ 局外縁</span></li>
-              <li>展示 <span class="lang-zh">/ 展覽</span></li>
-              <li>親子イベント <span class="lang-zh">/ 親子活動</span></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-
-    </ul>
-  </nav>
-
-  <!-- ★ ロゴ（メニューの横に表示） -->
-  <img src="logo.png" alt="局外人書店ロゴ" class="logo">
-
-</div>
-
-</body>
-</html>
-    nav li {
-      margin-bottom: 10px;
-    }
-
-    nav a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    .lang-zh {
-      color: #666;
-      font-size: 0.9em;
-      margin-left: 5px;
-    }
-
-    /* 第2階層（理念 / SNS / 交通 / お問い合わせ / 定期イベント / 不定期イベント） */
-    nav ul ul li {
-      margin-left: 16px;
-    }
-
-    /* 第3階層（SNSの中身 / お問い合わせの中身 / イベントの中身） */
-    nav ul ul ul li {
-      margin-left: 32px;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>局外人書店 <span class="lang-zh">/ 局外人書店</span></h1>
-  <img src="logo.png" alt="局外人書店ロゴ">
-</header>
-
-<nav>
-  <ul>
-    <li>トップ <span class="lang-zh">/ 首頁</span></li>
-
-    <!-- 局外人書店とは -->
-    <li>
-      <a href="about.html">局外人書店とは</a>
-      <span class="lang-zh">/ <a href="about.html">關於局外人書店</a></span>
-
-      <ul>
-        <!-- 理念 -->
-        <li>
-          <a href="about.html#about">理念</a>
-          <span class="lang-zh">/ <a href="about.html#about">理念</a></span>
-        </li>
-
-        <!-- SNS -->
-        <li>
-          <a href="about.html#about-sns">SNS</a>
-          <span class="lang-zh">/ <a href="about.html#about-sns">社群</a></span>
-
-          <ul>
-            <li><a href="https://x.com/outsider_book">Twitter</a></li>
-            <li><a href="https://www.instagram.com/outsiderbookstore/">Instagram</a></li>
-            <li><a href="https://www.youtube.com/">YouTube</a></li>
-          </ul>
-        </li>
-
-        <!-- 交通 -->
-        <li>
-          <a href="about.html#about-access">交通</a>
-          <span class="lang-zh">/ <a href="about.html#about-access">交通資訊</a></span>
-        </li>
-
-        <!-- お問い合わせ -->
-        <li>
-          <a href="about.html#about-contact">お問い合わせ</a>
-          <span class="lang-zh">/ <a href="about.html#about-contact">聯絡我們</a></span>
-
-          <ul>
-            <li>Mail</li>
-            <li>WeChat</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-
-    <!-- ニュース -->
-    <li>ニュース・特集 <span class="lang-zh">/ 新聞・專題</span></li>
-
-    <!-- 営業内容 -->
-    <li>
-      営業内容 <span class="lang-zh">/ 服務內容</span>
-      <ul>
-        <li>書店 <span class="lang-zh">/ 書店</span></li>
-        <li>公共図書館 <span class="lang-zh">/ 公共圖書館</span></li>
-        <li>会員制度 <span class="lang-zh">/ 會員制度</span></li>
-        <li>日本語教室 <span class="lang-zh">/ 高葉日語課</span></li>
-        <li>出版 <span class="lang-zh">/ 出版</span></li>
-      </ul>
-    </li>
-
-    <!-- イベント -->
-    <li>
-      イベント <span class="lang-zh">/ 活動</span>
-      <ul>
-        <li>
-          定期イベント <span class="lang-zh">/ 定期活動</span>
-          <ul>
-            <li>
-              <a href="pingpong.html">卓球</a>
-              <span class="lang-zh">/ <a href="pingpong.html">乒乓球</a></span>
-            </li>
-
-            <li>
-              <a href="exchange.html">日中交流会</a>
-              <span class="lang-zh">/ <a href="exchange.html">中日交流會</a></span>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          不定期イベント <span class="lang-zh">/ 不定期活動</span>
-          <ul>
-            <li>局外縁 <span class="lang-zh">/ 局外縁</span></li>
-            <li>展示 <span class="lang-zh">/ 展覽</span></li>
-            <li>親子イベント <span class="lang-zh">/ 親子活動</span></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-
-  </ul>
-</nav>
 
 </body>
 </html>
