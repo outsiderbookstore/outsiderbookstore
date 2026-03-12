@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>出版 / 出版</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      background: #fdfdfd;
+    }
+
+    header {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    .main-layout {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .lang-zh {
+      color: #666;
+      font-size: 0.9em;
+      margin-left: 4px;
+    }
+
+    .content {
+      margin-top: 40px;
+      max-width: 700px;
+    }
+
+    .book-item {
+      margin-bottom: 20px;
+    }
+
+    .book-item a {
+      font-size: 1.1em;
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .book-item small {
+      color: #666;
+    }
+
+    .logo {
+      height: 320px;
+    }
+
+    @media (max-width: 768px) {
+      .main-layout {
+        flex-direction: column;
+        align-items: center;
+      }
+      .logo {
+        margin-top: 20px;
+      }
+      .content {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>出版 <span class="lang-zh">/ 出版</span></h1>
+</header>
+
+<div class="main-layout">
+
+  <!-- ★ 統一メニュー -->
+  <nav>
+    <ul>
+
+      <li><a href="index.html">トップ <span class="lang-zh">/ 首頁</span></a></li>
+
+      <li>
+        <strong>局外人書店とは <span class="lang-zh">/ 關於局外人書店</span></strong>
+        <ul>
+          <li><a href="about.html#about">理念 / 理念</a></li>
+          <li><a href="about.html#about-sns">SNS / 社群</a></li>
+          <li><a href="about.html#about-access">交通 / 交通資訊</a></li>
+          <li><a href="about.html#about-contact">お問い合わせ / 聯絡我們</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>営業内容 <span class="lang-zh">/ 服務內容</span></strong>
+        <ul>
+          <li><a href="bookstore.html">書店 / 書店</a></li>
+          <li><a href="library.html">公共図書館 / 公共圖書館</a></li>
+          <li><a href="membership.html">会員制度 / 會員制度</a></li>
+          <li><a href="japaneseclass.html">日本語教室 / 萬葉日語課</a></li>
+          <li><a href="publishing.html">出版 / 出版</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>定期イベント / 定期活動</strong>
+        <ul>
+          <li><a href="pingpong.html">卓球 / 乒乓球</a></li>
+          <li><a href="exchange.html">日中交流会 / 中日交流會</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>不定期イベント / 不定期活動</strong>
+        <ul>
+          <li><a href="lecture.html">局外談 / 局外談</a></li>
+          <li><a href="discussion.html">君読 / 君讀</a></li>
+          <li><a href="qingyunclass.html">青雲講堂 / 青雲講堂</a></li>
+          <li><a href="exhibition.html">展示 / 展覽</a></li>
+          <li><a href="family.html">親子イベント / 親子活動</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- ★ ロゴ -->
+  <img src="logo.png" alt="局外人書店ロゴ" class="logo">
+
+</div>
+
+<!-- ★ 出版一覧 -->
+<div class="content">
+
+  <h2>出版物一覧</h2>
+
+  <!-- 新しい順（上から） -->
+  <div class="book-item">
+    <a href="publ02.html">勇敢的心（赵国君）</a><br>
+    <small>2026年2月</small>
+  </div>
+
+  <div class="book-item">
+    <a href="publ01.html">日本走讀記（賀衛方）</a><br>
+    <small>2026年1月8日</small>
+  </div>
+
+</div>
+
+</body>
+</html>
