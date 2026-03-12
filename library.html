@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>公共図書館 / 公共圖書館</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      background: #fdfdfd;
+    }
+
+    header {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    .main-layout {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .lang-zh {
+      color: #666;
+      font-size: 0.9em;
+      margin-left: 4px;
+    }
+
+    nav ul ul li {
+      margin-left: 16px;
+    }
+
+    nav ul ul ul li {
+      margin-left: 32px;
+    }
+
+    .logo {
+      height: 320px;
+    }
+
+    .content {
+      margin-top: 40px;
+      max-width: 700px;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .main-layout {
+        flex-direction: column;
+        align-items: center;
+      }
+      .logo {
+        margin-top: 20px;
+      }
+      .content {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>公共図書館 <span class="lang-zh">/ 公共圖書館</span></h1>
+</header>
+
+<div class="main-layout">
+
+  <!-- ★ 統一メニュー -->
+  <nav>
+    <ul>
+
+      <li>
+        <a href="index.html">
+          トップ <span class="lang-zh">/ 首頁</span>
+        </a>
+      </li>
+
+      <li>
+        <strong>
+          局外人書店とは <span class="lang-zh">/ 關於局外人書店</span>
+        </strong>
+        <ul>
+          <li><a href="about.html#about">理念 <span class="lang-zh">/ 理念</span></a></li>
+          <li><a href="about.html#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
+          <li><a href="about.html#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
+          <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>
+          営業内容 <span class="lang-zh">/ 服務內容</span>
+        </strong>
+        <ul>
+          <li><a href="bookstore.html">書店 <span class="lang-zh">/ 書店</span></a></li>
+          <li><a href="library.html">公共図書館 <span class="lang-zh">/ 公共圖書館</span></a></li>
+          <li><a href="membership.html">会員制度 <span class="lang-zh">/ 會員制度</span></a></li>
+          <li><a href="japaneseclass.html">日本語教室 <span class="lang-zh">/ 萬葉日語課</span></a></li>
+          <li><a href="publishing.html">出版 <span class="lang-zh">/ 出版</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>
+          定期イベント <span class="lang-zh">/ 定期活動</span>
+        </strong>
+        <ul>
+          <li><a href="pingpong.html">卓球 <span class="lang-zh">/ 乒乓球</span></a></li>
+          <li><a href="exchange.html">日中交流会 <span class="lang-zh">/ 中日交流會</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>
+          不定期イベント <span class="lang-zh">/ 不定期活動</span>
+        </strong>
+        <ul>
+          <li><a href="lecture.html">局外談（講演会） <span class="lang-zh">/ 局外談</span></a></li>
+          <li><a href="discussion.html">君読（公開討論会） <span class="lang-zh">/ 君讀</span></a></li>
+          <li><a href="qingyunclass.html">青雲講堂（青年向けシリーズ講義） <span class="lang-zh">/ 青雲講堂</span></a></li>
+          <li><a href="exhibition.html">展示 <span class="lang-zh">/ 展覽</span></a></li>
+          <li><a href="family.html">親子イベント <span class="lang-zh">/ 親子活動</span></a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- ★ ロゴ -->
+  <img src="logo.png" alt="局外人書店ロゴ" class="logo">
+
+</div>
+
+<!-- ★ library 固有の内容（画像1枚） -->
+<div class="content">
+
+  <img src="LibraryRule_034810.jpg" alt="図書館ルール">
+
+</div>
+
+</body>
+</html>
