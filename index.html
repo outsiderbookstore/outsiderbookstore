@@ -74,25 +74,12 @@
       color: #555;
     }
 
-    footer ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    footer li {
-      margin-bottom: 6px;
-    }
-
+    /* ★ スマホでも横並びを維持する */
     @media (max-width: 768px) {
       .main-layout {
-        flex-direction: column;
-        align-items: center;
-      }
-      .logo {
-        margin-top: 20px;
-      }
-      .content {
-        margin-top: 20px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
       }
     }
   </style>
@@ -106,7 +93,7 @@
 
 <div class="main-layout">
 
-  <!-- ★ 新しい統一メニュー -->
+  <!-- ★ 統一メニュー -->
   <nav>
     <ul>
 
@@ -175,22 +162,20 @@
 <!-- ★ index 固有の内容（SNSリンク＋著作権） -->
 <div class="content">
 
-  <footer style="margin-top:40px; padding-top:20px; border-top:1px solid #ddd; font-size:0.9em; color:#555;">
+  <footer>
 
-  <p style="text-align:center; margin-bottom:10px;">
-    <a href="https://x.com/outsider_book">Twitter (X)</a>　
-    <a href="https://www.instagram.com/outsiderbookstore/">Instagram</a>　
-    WeChat: juwairenshudian　
-    <a href="mailto:outsider.bookstore@gmail.com">E-mail:outsider.bookstore@gmail.com</a>
-  </p>
+    <p style="text-align:center; margin-bottom:10px;">
+      <a href="https://x.com/outsider_book">Twitter (X)</a>　
+      <a href="https://www.instagram.com/outsiderbookstore/">Instagram</a>　
+      WeChat: juwairenshudian　
+      <a href="mailto:outsider.bookstore@gmail.com">E-mail</a>
+    </p>
 
-  <p style="text-align:center; margin-top:10px;">
-    © 局外人書店 All Rights Reserved.
-  </p>
+    <p style="text-align:center; margin-top:10px;">
+      © 局外人書店 All Rights Reserved.
+    </p>
 
-</footer>
-
-
+  </footer>
 
 </div>
 
