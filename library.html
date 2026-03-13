@@ -66,23 +66,20 @@
       max-width: 700px;
     }
 
-    .content img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin-bottom: 20px;
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #555;
     }
 
+    /* ★ スマホでも横並びを維持する */
     @media (max-width: 768px) {
       .main-layout {
-        flex-direction: column;
-        align-items: center;
-      }
-      .logo {
-        margin-top: 20px;
-      }
-      .content {
-        margin-top: 20px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
       }
     }
   </style>
@@ -133,41 +130,3 @@
 
       <li>
         <strong>
-          定期イベント <span class="lang-zh">/ 定期活動</span>
-        </strong>
-        <ul>
-          <li><a href="pingpong.html">卓球 <span class="lang-zh">/ 乒乓球</span></a></li>
-          <li><a href="exchange.html">日中交流会 <span class="lang-zh">/ 中日交流會</span></a></li>
-        </ul>
-      </li>
-
-      <li>
-        <strong>
-          不定期イベント <span class="lang-zh">/ 不定期活動</span>
-        </strong>
-        <ul>
-          <li><a href="lecture.html">局外談（講演会） <span class="lang-zh">/ 局外談</span></a></li>
-          <li><a href="discussion.html">君読（公開討論会） <span class="lang-zh">/ 君讀</span></a></li>
-          <li><a href="qingyunclass.html">青雲講堂（青年向けシリーズ講義） <span class="lang-zh">/ 青雲講堂</span></a></li>
-          <li><a href="exhibition.html">展示 <span class="lang-zh">/ 展覽</span></a></li>
-          <li><a href="family.html">親子イベント <span class="lang-zh">/ 親子活動</span></a></li>
-        </ul>
-      </li>
-
-    </ul>
-  </nav>
-
-  <!-- ★ ロゴ -->
-  <img src="logo.png" alt="局外人書店ロゴ" class="logo">
-
-</div>
-
-<!-- ★ library 固有の内容（画像1枚） -->
-<div class="content">
-
-  <img src="LibraryRule_034810.jpg" alt="図書館ルール">
-
-</div>
-
-</body>
-</html>
