@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>局外人書店 / 首頁</title>
+  <title>局外人書店とは / 關於局外人書店</title>
 
   <style>
     body {
@@ -28,6 +28,10 @@
       gap: 40px;
     }
 
+    nav {
+      min-width: 160px;
+    }
+
     nav ul {
       list-style: none;
       padding: 0;
@@ -41,6 +45,7 @@
     nav a {
       color: #0066cc;
       text-decoration: none;
+      white-space: nowrap;
     }
 
     .lang-zh {
@@ -58,12 +63,28 @@
     }
 
     .logo {
-      height: 320px;
+      width: 80px;
+      height: auto;
     }
 
     .content {
       margin-top: 40px;
       max-width: 700px;
+    }
+
+    .content section {
+      margin-top: 30px;
+    }
+
+    .content ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    .content ul li {
+      margin-left: 12px;
+      margin-bottom: 6px;
     }
 
     footer {
@@ -74,25 +95,11 @@
       color: #555;
     }
 
-    footer ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    footer li {
-      margin-bottom: 6px;
-    }
-
     @media (max-width: 768px) {
       .main-layout {
-        flex-direction: column;
-        align-items: center;
-      }
-      .logo {
-        margin-top: 20px;
-      }
-      .content {
-        margin-top: 20px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
       }
     }
   </style>
@@ -106,7 +113,7 @@
 
 <div class="main-layout">
 
-  <!-- ★ 新しい統一メニュー -->
+  <!-- ★ 統一メニュー（特商法の位置を index と完全一致） -->
   <nav>
     <ul>
 
@@ -116,20 +123,20 @@
         </a>
       </li>
 
-      
-     <li>
-  <strong>
-    局外人書店とは <span class="lang-zh">/ 關於局外人書店</span>
-  </strong>
-  <ul>
-    <li><a href="about.html#about">理念 <span class="lang-zh">/ 理念</span></a></li>
-    <li><a href="about.html#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
-    <li><a href="about.html#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
-    <li><a href="OnlineStoreRule.html">特定商取引法に基づく表記 <span class="lang-zh">/ 依據特定商取引法之標示</span></a></li>
-    <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
-  </ul>
-</li>
+      <li>
+        <strong>
+          局外人書店とは <span class="lang-zh">/ 關於局外人書店</span>
+        </strong>
+        <ul>
+          <li><a href="about.html#about">理念 <span class="lang-zh">/ 理念</span></a></li>
+          <li><a href="about.html#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
+          <li><a href="about.html#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
+          <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
 
+          <!-- ★ 正しい位置（お問い合わせの下） -->
+          <li><a href="OnlineStoreRule.html">特定商取引法に基づく表記 <span class="lang-zh">/ 依據特定商取引法之標示</span></a></li>
+        </ul>
+      </li>
 
       <li>
         <strong>
@@ -175,21 +182,61 @@
 
 </div>
 
-<!-- ★ index 固有の内容（SNSリンク＋著作権） -->
+<!-- ★ ページ固有の内容（あなたの内容そのまま） -->
 <div class="content">
 
-  <footer>
-    <h3>SNS</h3>
-    <ul>
-      <li><a href="https://x.com/outsider_book">Twitter (X)</a></li>
-      <li><a href="https://www.instagram.com/outsiderbookstore/">Instagram</a></li>
-      <li>WeChat: juwairenshudian</li>
-      <li><a href="mailto:outsider.bookstore@gmail.com">E-mail</a></li>
-    </ul>
+  <h2 id="about">局外人書店とは <span class="lang-zh">/ 關於局外人書店</span></h2>
 
-    <p style="margin-top:20px; text-align:center;">
+  <img src="aboutimage.jpg" alt="理念"
+       style="max-width:100%; height:auto; display:block; margin:0 auto 20px;">
+
+  <section id="about-sns">
+    <h3>SNS <span class="lang-zh">/ 社群</span></h3>
+    <ul>
+      <li><a href="https://x.com/outsider_book">Twitter</a></li>
+      <li><a href="https://www.instagram.com/outsiderbookstore/">Instagram</a></li>
+      <li><a href="https://www.youtube.com/">YouTube</a></li>
+    </ul>
+  </section>
+
+  <section id="about-access">
+    <h3>交通 <span class="lang-zh">/ 交通資訊</span></h3>
+
+    <p>〒101-0051<br>
+    東京都千代田区神田神保町１丁目３７−４</p>
+
+    <p>
+      203号室　書店<br>
+      204号室　図書館
+    </p>
+
+    <p>
+      <a href="https://share.google/ZeuAGifU27238kjUU">地図を見る</a>
+    </p>
+  </section>
+
+  <section id="about-contact">
+    <h3>お問い合わせ <span class="lang-zh">/ 聯絡我們</span></h3>
+    <ul>
+      <li><a href="mailto:outsider.bookstore@gmail.com">Mail</a></li>
+      <li>WeChat: juwairenshudian</li>
+    </ul>
+  </section>
+
+  <!-- ★ フッター（統一） -->
+  <footer>
+
+    <p style="text-align:center; margin-bottom:10px;">
+      <a href="https://x.com/outsider_book">Twitter (X)</a>　
+      <a href="https://www.instagram.com/outsiderbookstore/">Instagram</a>　
+      WeChat: juwairenshudian　
+      <a href="mailto:outsider.bookstore@gmail.com">E-mail</a>
+    </p>
+
+    <p style="text-align:center; margin-top:10px;">
       © 局外人書店 All Rights Reserved.
     </p>
+
   </footer>
 
 </div>
