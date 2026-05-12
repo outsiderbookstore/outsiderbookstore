@@ -28,6 +28,10 @@
       gap: 40px;
     }
 
+    nav {
+      min-width: 160px; /* ★ スマホで潰れないように */
+    }
+
     nav ul {
       list-style: none;
       padding: 0;
@@ -41,6 +45,7 @@
     nav a {
       color: #0066cc;
       text-decoration: none;
+      white-space: nowrap; /* ★ 改行禁止 */
     }
 
     .lang-zh {
@@ -58,11 +63,13 @@
     }
 
     .logo {
-      height: 320px;
+      width: 80px;  /* ★ ロゴ幅統一 */
+      height: auto;
     }
 
     .content {
       max-width: 700px;
+      margin-top: 20px;
     }
 
     .content img {
@@ -72,16 +79,12 @@
       margin: 20px 0;
     }
 
+    /* ★ スマホでも横並び維持（全ページ統一） */
     @media (max-width: 768px) {
       .main-layout {
-        flex-direction: column;
-        align-items: center;
-      }
-      .logo {
-        margin-top: 20px;
-      }
-      .content {
-        margin-top: 20px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
       }
     }
   </style>
@@ -95,7 +98,7 @@
 
 <div class="main-layout">
 
-  <!-- ★ 統一メニュー -->
+  <!-- ★ 統一メニュー（特商法＝お問い合わせの下） -->
   <nav>
     <ul>
 
@@ -114,6 +117,9 @@
           <li><a href="about.html#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
           <li><a href="about.html#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
           <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
+
+          <!-- ★ 正しい位置（お問い合わせの下） -->
+          <li><a href="OnlineStoreRule.html">特定商取引法に基づく表記 <span class="lang-zh">/ 依據特定商取引法之標示</span></a></li>
         </ul>
       </li>
 
