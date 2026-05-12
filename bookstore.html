@@ -29,7 +29,7 @@
     }
 
     nav {
-      min-width: 160px; /* ★ スマホで潰れないように */
+      min-width: 160px;
     }
 
     nav ul {
@@ -45,7 +45,7 @@
     nav a {
       color: #0066cc;
       text-decoration: none;
-      white-space: nowrap; /* ★ 改行禁止 */
+      white-space: nowrap;
     }
 
     .lang-zh {
@@ -62,9 +62,13 @@
       margin-left: 32px;
     }
 
+    /* ★ ロゴ：index と同じ自動調整（タブレット4倍対応） */
     .logo {
-      width: 80px;  /* ★ ロゴ幅統一 */
+      width: max(40vw, 24em);
       height: auto;
+      max-width: 520px;
+      min-width: 240px;
+      margin-top: 5px;
     }
 
     .content {
@@ -87,7 +91,6 @@
       color: #555;
     }
 
-    /* ★ スマホでも横並び維持（あなたの仕様のまま） */
     @media (max-width: 768px) {
       .main-layout {
         flex-direction: row;
@@ -106,7 +109,7 @@
 
 <div class="main-layout">
 
-  <!-- ★ 統一メニュー（特商法＝お問い合わせの下） -->
+  <!-- ★ 統一メニュー -->
   <nav>
     <ul>
 
@@ -125,8 +128,6 @@
           <li><a href="about.html#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
           <li><a href="about.html#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
           <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
-
-          <!-- ★ 正しい位置（お問い合わせの下） -->
           <li><a href="OnlineStoreRule.html">特定商取引法に基づく表記 <span class="lang-zh">/ 依據特定商取引法之標示</span></a></li>
         </ul>
       </li>
@@ -141,6 +142,8 @@
           <li><a href="membership.html">会員制度 <span class="lang-zh">/ 會員制度</span></a></li>
           <li><a href="japaneseclass.html">日本語教室 <span class="lang-zh">/ 萬葉日語課</span></a></li>
           <li><a href="publishing.html">出版 <span class="lang-zh">/ 出版</span></a></li>
+          <!-- ★ 新項目：線上書店 / オンラインストア -->
+          <li><a href="https://outsiderbookstore.myshopify.com/">線上書店 <span class="lang-zh">/ オンラインストア</span></a></li>
         </ul>
       </li>
 
@@ -170,20 +173,26 @@
     </ul>
   </nav>
 
-  <!-- ★ ロゴ -->
+  <!-- ★ ロゴ（自動調整版） -->
   <img src="logo.png" alt="局外人書店ロゴ" class="logo">
 
 </div>
 
-<!-- ★ bookstore 固有の内容（画像2枚だけ） -->
+<!-- ★ bookstore 固有の内容 -->
 <div class="content">
 
+  <!-- ★ 最初にオンラインストアリンクを追加 -->
+  <p style="font-size:1.2em; margin-bottom:20px;">
+    <a href="https://outsiderbookstore.myshopify.com/" style="color:#0066cc; font-weight:bold;">
+      線上書店 <span class="lang-zh">/ オンラインストア</span>
+    </a>
+  </p>
+
+  <!-- ★ 既存の画像 -->
   <img src="BookstoreLibrary_034804.jpg" alt="書店・図書館案内">
   <img src="Bookstore_034754.jpg" alt="書店案内">
 
-  <!-- ★ フッター（全ページ統一） -->
   <footer>
-
     <p style="text-align:center; margin-bottom:10px;">
       <a href="https://x.com/outsider_book">Twitter (X)</a>　
       <a href="https://www.instagram.com/outsiderbookstore/">Instagram</a>　
@@ -194,7 +203,6 @@
     <p style="text-align:center; margin-top:10px;">
       © 局外人書店 All Rights Reserved.
     </p>
-
   </footer>
 
 </div>
