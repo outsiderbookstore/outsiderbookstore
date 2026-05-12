@@ -62,23 +62,13 @@
       margin-left: 32px;
     }
 
-    /* ★ ロゴ：PC・タブレット・スマホでサイズを変える */
+    /* ★ ロゴ：画面幅と文字サイズに応じて自動調整 */
     .logo {
-      width: 200px;   /* PC（1025px〜） */
+      width: min(22vw, 12em); /* 画面幅と文字サイズの両方に比例 */
       height: auto;
-    }
-
-    @media (max-width: 1024px) and (min-width: 769px) {
-      .logo {
-        width: 160px; /* タブレット */
-      }
-    }
-
-    @media (max-width: 768px) {
-      .logo {
-        width: 240px; /* スマホ：タイトルと同じくらい */
-        margin-top: 10px;
-      }
+      max-width: 340px;       /* PCで大きくなりすぎない */
+      min-width: 200px;       /* スマホで小さくなりすぎない */
+      margin-top: 5px;
     }
 
     .content {
@@ -173,7 +163,6 @@
     </ul>
   </nav>
 
-  <!-- ★ ロゴ（サイズ3段階対応） -->
   <img src="logo.png" alt="局外人書店ロゴ" class="logo">
 
 </div>
