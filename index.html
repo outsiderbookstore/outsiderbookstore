@@ -29,7 +29,7 @@
     }
 
     nav {
-      min-width: 160px; /* ★ スマホで潰れないように追加 */
+      min-width: 160px;
     }
 
     nav ul {
@@ -45,7 +45,7 @@
     nav a {
       color: #0066cc;
       text-decoration: none;
-      white-space: nowrap; /* ★ 改行禁止 */
+      white-space: nowrap;
     }
 
     .lang-zh {
@@ -62,9 +62,23 @@
       margin-left: 32px;
     }
 
+    /* ★ ロゴ：PC・タブレット・スマホでサイズを変える */
     .logo {
-      width: 80px;   /* ★ スマホ改行防止のため width 指定 */
+      width: 200px;   /* PC（1025px〜） */
       height: auto;
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+      .logo {
+        width: 160px; /* タブレット */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        width: 240px; /* スマホ：タイトルと同じくらい */
+        margin-top: 10px;
+      }
     }
 
     .content {
@@ -80,7 +94,6 @@
       color: #555;
     }
 
-    /* ★ スマホでも横並び維持（あなたの仕様のまま） */
     @media (max-width: 768px) {
       .main-layout {
         flex-direction: row;
@@ -99,7 +112,6 @@
 
 <div class="main-layout">
 
-  <!-- ★ 統一メニュー（特商法ページ復帰済み） -->
   <nav>
     <ul>
 
@@ -117,8 +129,7 @@
           <li><a href="about.html#about">理念 <span class="lang-zh">/ 理念</span></a></li>
           <li><a href="about.html#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
           <li><a href="about.html#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
-          <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>          
-          <!-- ★ 復帰させた特商法ページ -->
+          <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
           <li><a href="OnlineStoreRule.html">特定商取引法に基づく表記 <span class="lang-zh">/ 依據特定商取引法之標示</span></a></li>
         </ul>
       </li>
@@ -133,7 +144,6 @@
           <li><a href="membership.html">会員制度 <span class="lang-zh">/ 會員制度</span></a></li>
           <li><a href="japaneseclass.html">日本語教室 <span class="lang-zh">/ 萬葉日語課</span></a></li>
           <li><a href="publishing.html">出版 <span class="lang-zh">/ 出版</span></a></li>
-
         </ul>
       </li>
 
@@ -163,12 +173,11 @@
     </ul>
   </nav>
 
-  <!-- ★ ロゴ -->
+  <!-- ★ ロゴ（サイズ3段階対応） -->
   <img src="logo.png" alt="局外人書店ロゴ" class="logo">
 
 </div>
 
-<!-- ★ index 固有の内容（SNSリンク＋著作権） -->
 <div class="content">
 
   <footer>
