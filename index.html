@@ -62,12 +62,12 @@
       margin-left: 32px;
     }
 
-    /* ★ ロゴ：画面幅＋文字サイズに応じて自動調整（タブレット拡大） */
+    /* ★ ロゴ：タブレットで確実に4倍拡大される設定 */
     .logo {
-      width: min(28vw, 16em); /* ← タブレットでより大きく表示 */
+      width: max(40vw, 24em); /* ← より大きい方を採用 */
       height: auto;
-      max-width: 400px;       /* PCでの上限を少し広げる */
-      min-width: 220px;       /* スマホでの下限は維持 */
+      max-width: 520px;       /* PCでもしっかり存在感 */
+      min-width: 240px;       /* スマホでの下限を少し上げる */
       margin-top: 5px;
     }
 
