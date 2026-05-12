@@ -28,6 +28,10 @@
       gap: 40px;
     }
 
+    nav {
+      min-width: 160px; /* ★ スマホで潰れないように */
+    }
+
     nav ul {
       list-style: none;
       padding: 0;
@@ -41,6 +45,7 @@
     nav a {
       color: #0066cc;
       text-decoration: none;
+      white-space: nowrap; /* ★ 改行禁止 */
     }
 
     .lang-zh {
@@ -58,7 +63,8 @@
     }
 
     .logo {
-      height: 320px;
+      width: 80px;  /* ★ ロゴ幅統一 */
+      height: auto;
     }
 
     .content {
@@ -81,7 +87,7 @@
       color: #555;
     }
 
-    /* ★ スマホでも横並びを維持する */
+    /* ★ スマホでも横並び維持（あなたの仕様のまま） */
     @media (max-width: 768px) {
       .main-layout {
         flex-direction: row;
@@ -100,7 +106,7 @@
 
 <div class="main-layout">
 
-  <!-- ★ 統一メニュー -->
+  <!-- ★ 統一メニュー（特商法＝お問い合わせの下） -->
   <nav>
     <ul>
 
@@ -119,6 +125,9 @@
           <li><a href="about.html#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
           <li><a href="about.html#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
           <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
+
+          <!-- ★ 正しい位置（お問い合わせの下） -->
+          <li><a href="OnlineStoreRule.html">特定商取引法に基づく表記 <span class="lang-zh">/ 依據特定商取引法之標示</span></a></li>
         </ul>
       </li>
 
@@ -166,7 +175,7 @@
 
 </div>
 
-<!-- ★ library 固有の内容（あなたの指示どおり画像2枚だけ） -->
+<!-- ★ library 固有の内容（あなたの画像2枚そのまま） -->
 <div class="content">
 
   <img src="BookstoreLibrary_034804.jpg" alt="書店・図書館案内">
