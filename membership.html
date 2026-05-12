@@ -28,6 +28,10 @@
       gap: 40px;
     }
 
+    nav {
+      min-width: 160px; /* ★ スマホで潰れないように */
+    }
+
     nav ul {
       list-style: none;
       padding: 0;
@@ -41,6 +45,7 @@
     nav a {
       color: #0066cc;
       text-decoration: none;
+      white-space: nowrap; /* ★ 改行禁止 */
     }
 
     .lang-zh {
@@ -58,7 +63,8 @@
     }
 
     .logo {
-      height: 320px;
+      width: 80px;  /* ★ ロゴ幅統一 */
+      height: auto;
     }
 
     .content {
@@ -73,7 +79,15 @@
       margin-bottom: 20px;
     }
 
-    /* ★ スマホでも横並びを維持する（ここだけ修正） */
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* ★ スマホでも横並び維持（あなたの仕様のまま） */
     @media (max-width: 768px) {
       .main-layout {
         flex-direction: row;
@@ -92,7 +106,7 @@
 
 <div class="main-layout">
 
-  <!-- ★ 統一メニュー（あなたのまま） -->
+  <!-- ★ 統一メニュー（特商法＝お問い合わせの下） -->
   <nav>
     <ul>
 
@@ -111,6 +125,9 @@
           <li><a href="about.html#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
           <li><a href="about.html#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
           <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
+
+          <!-- ★ 正しい位置（お問い合わせの下） -->
+          <li><a href="OnlineStoreRule.html">特定商取引法に基づく表記 <span class="lang-zh">/ 依據特定商取引法之標示</span></a></li>
         </ul>
       </li>
 
@@ -158,7 +175,7 @@
 
 </div>
 
-<!-- ★ membership 固有の内容（あなたのまま） -->
+<!-- ★ membership 固有の内容（あなたの画像そのまま） -->
 <div class="content">
 
   <img src="Membership_044604.jpg" alt="会員制度の案内">
