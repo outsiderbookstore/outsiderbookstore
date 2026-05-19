@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>書店&公共図書館 / 書店&公共圖書館</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      background: #fdfdfd;
+    }
+
+    header {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    .main-layout {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    nav {
+      min-width: 160px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #0066cc;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .lang-zh {
+      color: #666;
+      font-size: 0.9em;
+      margin-left: 4px;
+    }
+
+    nav ul ul li {
+      margin-left: 16px;
+    }
+
+    nav ul ul ul li {
+      margin-left: 32px;
+    }
+
+    /* ★ ロゴ：index と同じ自動調整（タブレット4倍対応） */
+    .logo {
+      width: max(40vw, 24em);
+      height: auto;
+      max-width: 520px;
+      min-width: 240px;
+      margin-top: 5px;
+    }
+
+    .content {
+      margin-top: 40px;
+      max-width: 700px;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .main-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>書店&公共図書館 <span class="lang-zh">/ 書店&公共圖書館</span></h1>
+</header>
+
+<div class="main-layout">
+
+  <!-- ★ 統一メニュー -->
+  <nav>
+    <ul>
+
+      <li><a href="index.html">トップ <span class="lang-zh">/ 首頁</span></a></li>
+
+      <li>
+        <strong>局外人書店とは <span class="lang-zh">/ 關於局外人書店</span></strong>
+        <ul>
+          <li><a href="about.html#about">理念 <span class="lang-zh">/ 理念</span></a></li>
+          <li><a href="about.html#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
+          <li><a href="about.html#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
+          <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
+          <li><a href="OnlineStoreRule.html">特定商取引法に基づく表記 <span class="lang-zh">/ 依據特定商取引法之標示</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>営業内容 <span class="lang-zh">/ 服務內容</span></strong>
+        <ul>
+          <li><a href="bookstore_library.html">書店&公共図書館 <span class="lang-zh">/ 書店&公共圖書館</span></a></li>
+          <li><a href="membership.html">会員制度 <span class="lang-zh">/ 會員制度</span></a></li>
+          <li><a href="japaneseclass.html">日本語教室 <span class="lang-zh">/ 萬葉日語課</span></a></li>
+          <li><a href="publishing.html">出版 <span class="lang-zh">/ 出版</span></a></li>
+          <li><a href="https://outsiderbookstore.myshopify.com/">線上書店 <span class="lang-zh">/ オンラインストア</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>定期イベント <span class="lang-zh">/ 定期活動</span></strong>
+        <ul>
+          <li><a href="pingpong.html">卓球 <span class="lang-zh">/ 乒乓球</span></a></li>
+          <li><a href="exchange.html">日中交流会 <span class="lang-zh">/ 中日交流會</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>不定期イベント <span class="lang-zh">/ 不定期活動</span></strong>
+        <ul>
+          <li>Twitter(X)参照</li>
+          <li>局外談（講演会） <span class="lang-zh">/ 局外談</span></li>
+          <li>君読（公開討論会） <span class="lang-zh">/ 君讀</span></li>
+          <li>青雲講堂（青年向け講義） <span class="lang-zh">/ 青雲講堂</span></li>
+          <li>展示 <span class="lang-zh">/ 展覽</span></li>
+          <li>親子イベント <span class="lang-zh">/ 親子活動</span></li>
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- ★ ロゴ（自動調整版） -->
+  <img src="logo.png" alt="局外人書店ロゴ" class="logo">
+
+</div>
+
+<!-- ★ 統合ページ内容 -->
+<div class="content">
+
+  <h2 id="bookstore">書店 <span class="lang-zh">/ 書店</span></h2>
+
+  <p style="font-size:1.2em; margin-bottom:20px;">
+    <a href="https://outsiderbookstore.myshopify.com/" style="color:#0066cc; font-weight:bold;">
+      線上書店 <span class="lang-zh">/ オンラインストア</span>
+    </a>
+  </p>
+
+  <img src="Bookstore_034754.jpg" alt="書店案内">
+
+  <h2 id="library">公共図書館 <span class="lang-zh">/ 公共圖書館</span></h2>
+
+  <img src="BookstoreLibrary_034804.jpg" alt="図書館案内">
+
+  <footer>
+    <p style="text-align:center; margin-bottom:10px;">
+      <a href="https://x.com/outsider_book">Twitter (X)</a>　
+      <a href="https://www.instagram.com/outsiderbookstore/">Instagram</a>　
+      WeChat: juwairenshudian　
+      <a href="mailto:outsider.bookstore@gmail.com">E-mail</a>
+    </p>
+
+    <p style="text-align:center; margin-top:10px;">
+      © 局外人書店 All Rights Reserved.
+    </p>
+  </footer>
+
+</div>
+
+</body>
+</html>
