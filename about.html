@@ -62,7 +62,7 @@
       margin-left: 32px;
     }
 
-    /* ロゴ：自動調整（タブレット4倍対応） */
+    /* ロゴ：新仕様の自動調整 */
     .logo {
       width: max(40vw, 24em);
       height: auto;
@@ -74,6 +74,21 @@
     .content {
       margin-top: 40px;
       max-width: 700px;
+    }
+
+    .content section {
+      margin-top: 30px;
+    }
+
+    .content ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    .content ul li {
+      margin-left: 12px;
+      margin-bottom: 6px;
     }
 
     footer {
@@ -102,7 +117,7 @@
 
 <div class="main-layout">
 
-  <!-- ★ 新構造のメニュー -->
+  <!-- ★ メニュー：新構造＋あなたの元の並びを尊重 -->
   <nav>
     <ul>
 
@@ -117,10 +132,11 @@
           局外人書店とは <span class="lang-zh">/ 關於局外人書店</span>
         </strong>
         <ul>
-          <li><a href="#about">理念 <span class="lang-zh">/ 理念</span></a></li>
-          <li><a href="#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
-          <li><a href="#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
-          <li><a href="#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
+          <li><a href="about.html#about">局外人書店とは <span class="lang-zh">/ 關於局外人書店</span></a></li>
+          <li><a href="about.html#about-sns">SNS <span class="lang-zh">/ 社群</span></a></li>
+          <li><a href="about.html#about-access">交通 <span class="lang-zh">/ 交通資訊</span></a></li>
+          <li><a href="about.html#about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></a></li>
+          <!-- ★ 特商法リンクは削除（出版&オンラインストアページにのみ存在） -->
         </ul>
       </li>
 
@@ -152,46 +168,62 @@
         </strong>
         <ul>
           <li><strong>※ Twitter(X)参照 <span class="lang-zh">/ ※ 請參考 Twitter(X)</span></strong></li>
-          <li>局外談（講演会） <span class="lang-zh">/ 局外談</span></li>
-          <li>君読（公開討論会） <span class="lang-zh">/ 君讀</span></li>
-          <li>青雲講堂（青年向け講義） <span class="lang-zh">/ 青雲講堂</span></li>
-          <li>展示 <span class="lang-zh">/ 展覽</span></li>
-          <li>親子イベント <span class="lang-zh">/ 親子活動</span></li>
+          <!-- 個別イベントリンクは作らない・載せない -->
         </ul>
       </li>
 
     </ul>
   </nav>
 
-  <!-- ロゴ -->
+  <!-- ★ ロゴ -->
   <img src="logo.png" alt="局外人書店ロゴ" class="logo">
 
 </div>
 
-<!-- ★ About 本文（あなたの元の構成を保持） -->
+<!-- ★ ページ固有の内容：あなたの旧版をそのまま残す -->
 <div class="content">
 
-  <h2 id="about">理念 <span class="lang-zh">/ 理念</span></h2>
-  <p>
-    （ここにあなたの理念本文が入る）
-  </p>
+  <h2 id="about">局外人書店とは <span class="lang-zh">/ 關於局外人書店</span></h2>
 
-  <h2 id="about-sns">SNS <span class="lang-zh">/ 社群</span></h2>
-  <p>
-    Twitter(X)、Instagram、WeChat などの案内。
-  </p>
+  <img src="aboutimage.jpg" alt="理念"
+       style="max-width:100%; height:auto; display:block; margin:0 auto 20px;">
 
-  <h2 id="about-access">交通 <span class="lang-zh">/ 交通資訊</span></h2>
-  <p>
-    （住所・最寄駅など）
-  </p>
+  <section id="about-sns">
+    <h3>SNS <span class="lang-zh">/ 社群</span></h3>
+    <ul>
+      <li><a href="https://x.com/outsider_book">Twitter</a></li>
+      <li><a href="https://www.instagram.com/outsiderbookstore/">Instagram</a></li>
+      <li><a href="https://www.youtube.com/">YouTube</a></li>
+    </ul>
+  </section>
 
-  <h2 id="about-contact">お問い合わせ <span class="lang-zh">/ 聯絡我們</span></h2>
-  <p>
-    メール：outsider.bookstore@gmail.com  
-  </p>
+  <section id="about-access">
+    <h3>交通 <span class="lang-zh">/ 交通資訊</span></h3>
 
+    <p>〒101-0051<br>
+    東京都千代田区神田神保町１丁目３７−４</p>
+
+    <p>
+      203号室　書店<br>
+      204号室　図書館
+    </p>
+
+    <p>
+      <a href="https://share.google/ZeuAGifU27238kjUU">地図を見る</a>
+    </p>
+  </section>
+
+  <section id="about-contact">
+    <h3>お問い合わせ <span class="lang-zh">/ 聯絡我們</span></h3>
+    <ul>
+      <li><a href="mailto:outsider.bookstore@gmail.com">Mail</a></li>
+      <li>WeChat: juwairenshudian</li>
+    </ul>
+  </section>
+
+  <!-- ★ フッター（あなたの旧版そのまま） -->
   <footer>
+
     <p style="text-align:center; margin-bottom:10px;">
       <a href="https://x.com/outsider_book">Twitter (X)</a>　
       <a href="https://www.instagram.com/outsiderbookstore/">Instagram</a>　
@@ -202,6 +234,7 @@
     <p style="text-align:center; margin-top:10px;">
       © 局外人書店 All Rights Reserved.
     </p>
+
   </footer>
 
 </div>
